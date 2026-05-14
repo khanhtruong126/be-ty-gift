@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --primary-pink: #ff4d6d;
+  --secondary-pink: #ff8fa3;
+  --soft-pink: #fff0f5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--soft-pink);
+}
+
+.btn-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--primary-pink),
+    var(--secondary-pink)
+  );
+  color: white;
+  border: none;
+  padding: 18px 45px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 10px 25px -5px rgba(255, 77, 109, 0.4);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 35px -5px rgba(255, 77, 109, 0.5);
+}
+
+.btn-outline {
+  background: white;
+  color: var(--primary-pink);
+  border: 3px solid var(--primary-pink);
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.polaroid-frame {
+  background: white;
+  padding: 15px 15px 60px 15px;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.handwriting {
+  font-family: 'Dancing+Script', cursive;
+  font-size: 2rem;
+  color: #666;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.floating-heart {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.3;
+}
