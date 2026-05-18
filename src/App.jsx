@@ -127,7 +127,7 @@ export default function App() {
                 return (
                   <motion.div
                     key={src}
-                    className="absolute w-[260px] h-[340px] bg-white p-3 pb-16 rounded-xl shadow-[0_20px_40px_rgba(255,77,109,0.2)] border border-pink-50 origin-bottom"
+                    className="absolute w-[280px] h-[350px] bg-white p-5 pb-16 rounded-xl shadow-[0_20px_40px_rgba(255,77,109,0.2)] border border-pink-50 origin-bottom"
                     animate={{
                       scale: 1 - relativeIndex * 0.07,
                       y: relativeIndex * 20,
