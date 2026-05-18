@@ -11,12 +11,12 @@ import img9522 from './assets/IMG_9522.PNG';
 import img9523 from './assets/IMG_9523.PNG';
 
 const BETY_IMAGES = [
+  img9523,
   img9519,
   img9517,
   img9518,
   img9520,
   img9521,
-  img9523,
   img9522,
 ];
 
@@ -158,12 +158,12 @@ export default function App() {
                       <span className="font-['Dancing_Script'] text-3xl text-[#FF4D6D] font-bold tracking-wider">
                         {
                           [
+                            'Em ghệ miền Tây! 💕',
                             'Cutie 🌸',
                             'Xink!!!',
                             'Nét căng 🔥',
                             'Bae 💕',
                             'Nàng thơ ✨',
-                            'Em ghệ miền Tây! 💕',
                             'Bé Ty 🌸',
                           ][index]
                         }
